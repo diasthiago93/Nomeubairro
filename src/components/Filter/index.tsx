@@ -1,12 +1,21 @@
 import React from "react";
 import { Col, Row, Typography, Input } from "antd";
 import { Container } from "./styles";
+import axios from "axios";
 
 export const Filter = () => {
   const { Title } = Typography;
   const { Search } = Input;
 
-  const onSearch = (value: string) => console.log(value);
+  const onSearch = (value: string) => {
+    try {
+      axios.get("https://viacep.com.br/ws/38701264/json/").then((response) => {
+        console.log(response.data);
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <Container>
