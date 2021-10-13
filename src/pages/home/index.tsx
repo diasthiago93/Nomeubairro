@@ -11,7 +11,7 @@ export const Home = () => {
     <>
       <Filter />
       <Container>
-        <Row>
+        <Row gutter={24}>
           <Col xs={{ span: 24 }} lg={{ span: 12 }}>
             <ServiceList />
           </Col>

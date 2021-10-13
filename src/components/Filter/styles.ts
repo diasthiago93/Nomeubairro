@@ -11,4 +11,8 @@ export const Container = styled.section`
     #00bf72,
     #a8eb12
   );
+  h1,
+  h5 {
+    color: #fff;
+  }
 `;

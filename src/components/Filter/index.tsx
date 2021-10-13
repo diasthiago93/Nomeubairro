@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row, Typography, Input } from "antd";
 import { Container } from "./styles";
 import axios from "axios";
@@ -6,11 +6,12 @@ import axios from "axios";
 export const Filter = () => {
   const { Title } = Typography;
   const { Search } = Input;
+  const [data, setData] = useState([]);
 
   const onSearch = (value: string) => {
     try {
-      axios.get("https://viacep.com.br/ws/38701264/json/").then((response) => {
-        console.log(response.data);
+      axios.get(`https://viacep.com.br/ws/${value}/json/`).then((response) => {
+        setData(response.data);
       });
     } catch (error) {
       console.error(error);
@@ -21,7 +22,9 @@ export const Filter = () => {
     <Container>
       <Row justify="center">
         <Col xs={{ span: 24 }} lg={{ span: 12 }}>
-          <Title>Contrate diaristas de forma rápida, simples e objetiva!</Title>
+          <Title>
+            Alugue equipamentos de forma rápida, simples e objetiva!
+          </Title>
           <Title level={5}>Digite o cep de sua região</Title>
           <Search
             size="large"
