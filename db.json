@@ -2,9 +2,9 @@
   "profile": [
     {
       "id": 1,
-      "name": "Jose Algusto",
-      "image": "https://randomuser.me/api/portraits/med/men/75.jpg",
-      "description": "Loren",
+      "name": "Cortador de Grama Elétrico",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_813914-MLA40116219140_122019-V.webp",
+      "description": "Não há nada como um jardim arrumado. Se você deseja conhecer os detalhes ou se possui um pequeno espaço verde, o aparador de grama Trapp o ajudará nas áreas onde um aparador de grama não pode alcançar. Isso permitirá que você corte as ervas daninhas perto do chão e passe por locais de difícil acesso, como cantos e bordas.",
       "price": "10,00",
       "location": {
         "street": "9278 new road",
@@ -19,9 +19,9 @@
     },
     {
       "id": 2,
-      "name": "Maria de Fatima",
-      "image": "https://randomuser.me/api/portraits/med/women/75.jpg",
-      "description": "Loren",
+      "name": "Lavadora de Alta Pressão",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_633179-MLA46191469844_052021-O.webp",
+      "description": "As lavadoras de alta pressão desta empresa brasileira se destacam pela qualidade e adaptabilidade de uso em diferentes contextos.",
       "price": "20,00",
       "location": {
         "street": "9278 new road",

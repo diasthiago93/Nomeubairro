@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import Leaflet from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { MapContainerBox } from "./styles";
 import { onLoadList } from "../../service/listService";
 import { ListProps } from "./props";
+import marker from "../../assets/pin.png";
 
 export const Map = () => {
   const [data, setData] = useState([]);
+  const mapPackageIcon = Leaflet.icon({
+    iconUrl: marker,
+    iconSize: [30, 30],
+  });
   useEffect(() => {
     onLoadList(setData);
   }, []);
@@ -17,9 +23,9 @@ export const Map = () => {
       item.location.coordinates.longitude
     );
     return (
-      <Marker key={item.id} position={coordinates}>
+      <Marker key={item.id} position={coordinates} icon={mapPackageIcon}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          {item.name} - R$ {item.price}/hora
         </Popup>
       </Marker>
     );
@@ -30,7 +36,7 @@ export const Map = () => {
         className="map"
         center={[-18.6041453, -46.5096698]}
         zoom={15}
-        scrollWheelZoom={true}
+        scrollWheelZoom={false}
       >
         {position}
         <TileLayer

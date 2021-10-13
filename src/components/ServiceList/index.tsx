@@ -16,10 +16,11 @@ export const ServiceList = () => {
       renderItem={(item: ListProps) => (
         <List.Item key={item.id}>
           <List.Item.Meta
-            avatar={<Avatar size={80} src={item.image} />}
+            avatar={<Avatar shape="square" size={80} src={item.image} />}
             title={<a href="https://ant.design">{item.name}</a>}
             description={item.description}
           />
+          <b>R$ {item.price}/hora</b>
         </List.Item>
       )}
     />

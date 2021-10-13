@@ -4,6 +4,7 @@ export interface ListProps {
   image: string;
   description: string;
   location: LocationProps;
+  price: number;
 }
 interface LocationProps {
   street: string;
