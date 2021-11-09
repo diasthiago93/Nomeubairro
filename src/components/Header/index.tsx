@@ -4,7 +4,10 @@ import { HeaderBar } from "./styles";
 export const Header = () => {
   return (
     <HeaderBar>
-      <img src="" alt="LOGO" />
+      <h5>
+        NO MEU
+        <br /> BAIRRO
+      </h5>
     </HeaderBar>
   );
 };

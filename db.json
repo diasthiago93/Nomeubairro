@@ -6,6 +6,7 @@
       "image": "https://http2.mlstatic.com/D_NQ_NP_813914-MLA40116219140_122019-V.webp",
       "description": "Não há nada como um jardim arrumado. Se você deseja conhecer os detalhes ou se possui um pequeno espaço verde, o aparador de grama Trapp o ajudará nas áreas onde um aparador de grama não pode alcançar. Isso permitirá que você corte as ervas daninhas perto do chão e passe por locais de difícil acesso, como cantos e bordas.",
       "price": "10,00",
+      "radius": "Centro",
       "location": {
         "street": "9278 new road",
         "city": "kilcoole",
@@ -23,6 +24,7 @@
       "image": "https://http2.mlstatic.com/D_NQ_NP_633179-MLA46191469844_052021-O.webp",
       "description": "As lavadoras de alta pressão desta empresa brasileira se destacam pela qualidade e adaptabilidade de uso em diferentes contextos.",
       "price": "20,00",
+      "radius": "Nossa Senhora das Graças",
       "location": {
         "street": "9278 new road",
         "city": "kilcoole",
@@ -31,6 +33,42 @@
         "coordinates": {
           "latitude": "-18.588349",
           "longitude": "-46.5145692"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Parafusadeira e Furadeira de 3/8 Pol. (10mm) a Bateria",
+      "image": "https://m.media-amazon.com/images/I/71KLp0pSLnL._AC_SX569_.jpg",
+      "description": "Parafusadeira/furadeira com mandril 3/8 com velocidade variável e reversível e trava.",
+      "price": "45,00",
+      "radius": "Nossa Senhora das Graças",
+      "location": {
+        "street": "9278 new road",
+        "city": "kilcoole",
+        "state": "waterford",
+        "postcode": "93027",
+        "coordinates": {
+          "latitude": "-18.6037385",
+          "longitude": "-46.5150363"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Escada Multifuncional",
+      "image": "https://m.media-amazon.com/images/I/31Sl0RNbvML._AC_.jpg",
+      "description": "A Escada Multifuncional 4x4 da Mor é surpreendente e oferece diversas formas de utilização! Para uso profissional e doméstico, possui estrutura super resistente em alumínio, dobradiças em aço com exclusiva trava de segurança e pés emborrachados que aumentam a aderência e não danificam o piso.",
+      "price": "15,00",
+      "radius": "Centro",
+      "location": {
+        "street": "9278 new road",
+        "city": "kilcoole",
+        "state": "waterford",
+        "postcode": "93027",
+        "coordinates": {
+          "latitude": "-18.5971843",
+          "longitude": "-46.5257173"
         }
       }
     }
