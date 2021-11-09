@@ -1,0 +1,51 @@
+import { PickerLocale } from "antd/es/date-picker/generatePicker";
+
+export const CALENDAR_LOCALE: PickerLocale = {
+    lang: {
+        locale: "pt_BR",
+        placeholder: "Selecione uma data",
+        rangePlaceholder: ["Data inicial", "Data final"],
+        today: "Hoje",
+        now: "Agora",
+        backToToday: "Voltar para hoje",
+        ok: "Ok",
+        clear: "Limpar",
+        month: "Mês",
+        year: "Ano",
+        timeSelect: "Selecione a hora",
+        dateSelect: "Selecione a data",
+        monthSelect: "Escolha o mês",
+        yearSelect: "Escolha o ano",
+        decadeSelect: "Escolha a década",
+        yearFormat: "YYYY",
+        dateFormat: "DD/MM/YYYY",
+        dayFormat: "DD",
+        dateTimeFormat: "DD/MM/YYYY HH:mm:ss",
+        monthFormat: "MMM",
+        monthBeforeYear: true,
+        previousMonth: "Mês anterior (PageUp)",
+        nextMonth: "Próximo mês (PageDown)",
+        previousYear: "Ano anterior (Control + left)",
+        nextYear: "Próximo ano (Control + right)",
+        previousDecade: "Década anterior",
+        nextDecade: "Próxima década",
+        previousCentury: "Século",
+        nextCentury: "Próximo século",
+        yearPlaceholder: "Ano",
+        monthPlaceholder: "Mês",
+        weekPlaceholder: "Semana",
+        rangeYearPlaceholder: ["de", "até"],
+        rangeWeekPlaceholder: ["de", "até"],
+        rangeMonthPlaceholder: ["de", "até"],
+        shortWeekDays: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab', 'Dom'],
+        shortMonths: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+    },
+    timePickerLocale: {
+        placeholder: "Selecione a hora",
+        rangePlaceholder: ['de', 'ate']
+    },
+    dateFormat: "DD-MM-YYYY",
+    dateTimeFormat: "DD-MM-YYYY HH:mm:ss",
+    weekFormat: "wo-YYYY",
+    monthFormat: "MM-YYYY"
+}

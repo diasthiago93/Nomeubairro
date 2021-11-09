@@ -9,10 +9,13 @@ import marker from "../../assets/pin.png";
 
 export const Map = () => {
   const [data, setData] = useState([]);
+  const [lat, setLat] = useState(-18.6041453);
+  const [long, setLong] = useState(-46.5096698);
   const mapPackageIcon = Leaflet.icon({
     iconUrl: marker,
     iconSize: [30, 30],
   });
+
   useEffect(() => {
     onLoadList(setData);
   }, []);
@@ -25,7 +28,7 @@ export const Map = () => {
     return (
       <Marker key={item.id} position={coordinates} icon={mapPackageIcon}>
         <Popup>
-          {item.name} - R$ {item.price}/hora
+          {item.name} - R$ {item.price}/Dia
         </Popup>
       </Marker>
     );
@@ -34,7 +37,7 @@ export const Map = () => {
     <MapContainerBox>
       <MapContainer
         className="map"
-        center={[-18.6041453, -46.5096698]}
+        center={[lat, long]}
         zoom={15}
         scrollWheelZoom={false}
       >
